@@ -6,7 +6,7 @@ let app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use("/login", express.static(__dirname + "/public"));
 
-app.get("/login", (req, res) => {
+app.get("/", (req, res) => {
   res.send("Hello,My application");
 });
 
